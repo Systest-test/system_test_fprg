@@ -8,7 +8,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "public_read" {
   bucket = "my-tf-log-bucket"
-  acl = "private"
+  acl = "public-read"
 }
 resource "aws_s3_bucket" "public_read_write" {
   acl = "private"
